@@ -4,13 +4,12 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
-
-SBR_WEBDRIVER = os.getenv("SBR_WEBDRIVER")
+SBR_WEBDRIVER = "https://brd-customer-hl_8ecd982c-zone-ai_scraper02:w7ceciyg154m@brd.superproxy.io:9515"
 
 
 def scrape_website(website):
     print("Connecting to Scraping Browser...")
+    
     sbr_connection = ChromiumRemoteConnection(SBR_WEBDRIVER, "goog", "chrome")
     with Remote(sbr_connection, options=ChromeOptions()) as driver:
         driver.get(website)

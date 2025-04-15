@@ -8,8 +8,8 @@ from scrape import (
 from parse import parse_with_ollama
 
 # Streamlit UI
-st.title("AI Web Scraper")
-url = st.text_input("Enter Website URL: ")
+st.title("Dhilshan's AI Web Scraper")
+url = st.text_input("Enter Website URL")
 
 # Step 1: Scrape the Website
 if st.button("Scrape Website"):
