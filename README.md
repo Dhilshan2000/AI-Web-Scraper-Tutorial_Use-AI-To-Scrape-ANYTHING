@@ -35,14 +35,14 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 ## Requirements
 
-streamlit
-langchain
-langchain_ollama
-selenium
-beautifulsoup4
-lxml
-html5lib
-python-dotenv
+- streamlit
+- langchain
+- langchain_ollama
+- selenium
+- beautifulsoup4
+- lxml
+- html5lib
+- python-dotenv
 
 
 🧠 How It Works
